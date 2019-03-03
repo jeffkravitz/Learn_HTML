@@ -4,37 +4,86 @@
         <meta charset="utf-8">
         <title>Jeff's html learning website</title>
         <style>
+
             body {
                 background-color: whitesmoke;
             }
+
+            .topnav {
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                font-size: 17px;
+            }
+
+            .topnav {
+                overflow: hidden;
+                background-color: #333;
+            }
+
+            .topnav a {
+            float: left;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            }
+
+            .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+
+            .topnav a.active {
+                background-color: #4CAF50;
+                color: white;
+            }
+
             .purpose {
                 color: yellowgreen;
                 background-color: black;
             }
+
             .right {
                 text-align: right;
             }
+
             .title {
                 color: green;
                 font-style: bold;
             }
+
             .section {
                 color: green;
                 background-color: rgb(235, 235, 235);
                 font-weight: bold;
             }
+
             .content {
                 background-color: white;
             }
+
             .set {
+                margin: 25px;
+                padding: 5px;
                 border-style: solid;
                 border-color: green black black black;
                 width: 50%;
             }
+
             /* this is a comment in CSS */
+
         </style>
     </head>
+
     <body>
+
+        <div class="topnav">
+            <a href="index.html">Home</a>
+            <a class="active" href="html_test.html">Examples</a>
+        </div>
+
         <h1 class="title">Hi, my name is Jeff</h1>
         <p class="purpose right">I'm learning how to code html.</p>
         <p>This website will serve the purpose of both testing my code and keeping my notes.</p>
@@ -51,6 +100,7 @@
                 information about the site, such as the title, and provides links to scripts and stylesheets 
                 the site needs to render and behave correctly.</li>
         </ul>
+
         <button>this is my button</button>
 
         <p>
@@ -58,9 +108,9 @@
             Here's a hyperlink to <a href="https://jeffkravitz.github.io/Learn_R/Journal.html">my R markdown website</a>.
             Notice that inside the opening a tag there is href, which stands for "reference." This is called an attribute. 
         </p>
-        <!-- <img src="https://www.google.com/search?q=megumin&client=firefox-b-1-d&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjc-pzUi97gAhVuT98KHfI5C4kQ_AUIDigB&biw=1345&bih=712#imgrc=QPBe75BposQtsM:" alt="pic of Megumin> -->
+        
         <div class="set">
-            <div class="section">Github commands for terminal:</div>
+            <div class="section">Github commands for terminal</div>
             <ul class="content">
                 <li>cd DIRECTORY_HERE - changes directory</li>
                 <li>cd .. - moves to outer directory </li>
@@ -72,5 +122,6 @@
                 <li>git push - pushes active commits</li>
             </ul>
         </p>
+
     </body>
 </html>
